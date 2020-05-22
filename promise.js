@@ -26,3 +26,11 @@ a().then(function(result){
 }).then(function(res){
     console.log(res);
 })
+
+Promise.all([a(), b()]).then(function(res){
+    console.log(res);
+})
+
+Promise.race([a(), b()]).then(function(res){
+    console.log(res);
+})
